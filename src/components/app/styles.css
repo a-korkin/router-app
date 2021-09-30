@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+    grid-template-areas: 
+        'header header header header'
+        'main main . sidebar'
+        'footer footer footer footer';
+}
+
+.header {
+    grid-area: header;
+    background-color: blue;
+}
+
+.main {
+    grid-area: main;
+    background-color: yellow;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: red;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: green;
+}
