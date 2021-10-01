@@ -1,0 +1,12 @@
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field > label{
+    font-style: italic;
+}
+
+.field > input {
+    padding: 5px;
+}

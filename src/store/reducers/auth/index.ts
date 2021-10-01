@@ -4,11 +4,6 @@ export interface ICommonState {
 
 }
 
-const initialState: ICommonState = {
-    isLoading: false,
-    isAuth: false
-}
-
 export enum AuthActionEnum {
     SET_IS_AUTH = "SET_IS_AUTH",
     SET_IS_LOADING = "SET_IS_LOADING"
@@ -26,7 +21,12 @@ export interface SetIsLoadingAction {
 
 export type AuthAction = SetIsAuthAction | SetIsLoadingAction;
 
-export const authReducers = (state: ICommonState = initialState, action: AuthAction): ICommonState => {
+const initialState: ICommonState = {
+    isLoading: false,
+    isAuth: false
+}
+
+export const authReducer = (state: ICommonState = initialState, action: AuthAction): ICommonState => {
     switch (action.type) {
         case AuthActionEnum.SET_IS_LOADING:
             return { ...state, isLoading: action.payload };
