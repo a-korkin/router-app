@@ -13,10 +13,11 @@ export interface IRoute {
 
 export enum RouteNamesEnum {
     DEFAULT = "/",
+    LOGIN = "/login",
     CASES = "/cases",
     PERSONS = "/persons",
     USERS = "/users",
-    LOGIN = "/login"
+    PAYMENTS = "/payments"
 }
 
 export const privateRoutes: IRoute[] = [
