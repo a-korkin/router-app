@@ -1,28 +1,52 @@
-.container {
-    display: grid;
-    grid-template: auto / repeat(4, 1fr);
-    grid-template-areas: 
-        'header header header header'
-        'main main . sidebar'
-        'footer footer footer footer';
+@font-face {
+    font-family: "Lato";
+    src: url(./fonts/Lato/Lato-Regular.ttf);
 }
 
-.header {
-    grid-area: header;
-    background-color: blue;
+@font-face {
+    font-family: "Lato";
+    src: url(./fonts/Lato/Lato-Bold.ttf);
+    font-weight: bold;
 }
 
-.main {
-    grid-area: main;
-    background-color: yellow;
+@font-face {
+    font-family: "Lato";
+    src: url(./fonts/Lato/Lato-Italic.ttf);
+    font-style: italic;
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: red;
+@font-face {
+    font-family: "Lato";
+    src: url(./fonts/Lato/Lato-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: green;
+@font-face {
+    font-family: "Lato";
+    src: url(./fonts/Lato/Lato-Light.ttf);
+    font-weight: lighter;
+}
+
+body {
+    font-family: "Lato";
+}
+
+h1 {
+    font-style: italic;
+}
+
+a {
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.menu>a {
+    margin-right: 10px;
+    text-decoration: none;
 }

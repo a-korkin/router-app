@@ -1,14 +1,18 @@
 import React, { FC } from "react";
 import AppRouter from "../app-router";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 const App: FC = () => {
     return (
-        <div className="container">
-            <div className="header">header</div>
-            <div className="main"><AppRouter /></div>
-            <div className="sidebar">sidebar</div>
-            <div className="footer">footer</div>
+        <div>
+            <nav className="menu">
+                <Link to="/">Default</Link>
+                <Link to="/users">Users</Link>
+                <Link to="/persons">Persons</Link>
+                <Link to="/cases">Cases</Link>
+            </nav>
+            <AppRouter />
         </div>
     );
 }
