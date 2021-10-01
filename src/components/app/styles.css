@@ -50,3 +50,14 @@ a {
     margin-right: 10px;
     text-decoration: none;
 }
+
+.primary {
+    background-color: #2185d0;
+    color: #fff;
+}
+
+.primary:hover {
+    background-color: #1678c2;
+    color: #fff;
+    text-shadow: none;
+}

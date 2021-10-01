@@ -1,18 +1,19 @@
 import React, { FC } from "react";
+import Input from "../../ui/input";
+import Button from "../../ui/button";
 import "./styles.css";
 
 const LoginForm: FC = () => {
     return (
-        <form>
-            <div className="field">
-                <label htmlFor="username">Логин</label>
-                <input type="text" name="username" id="username" placeholder="логин" />
-            </div>
-            <div className="field">
-                <label htmlFor="password">Пароль</label>
-                <input type="password" name="password" id="password" placeholder="пароль" />
-            </div>
-        </form>
+        <div className="login">
+            <form>
+                <Input type="text" label="Логин" name="username" placeholder="логин" />
+                <br />
+                <Input type="password" label="Пароль" name="password" placeholder="пароль" />
+                <br />
+                <Button class_="primary">ВОЙТИ</Button>
+            </form>
+        </div>
     );
 }
 

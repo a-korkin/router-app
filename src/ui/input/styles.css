@@ -1,0 +1,17 @@
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field > label{
+    font-style: italic;
+}
+
+.field > input {
+    padding: 7px;
+    border-radius: .28571429rem;
+    border-style: solid;
+    border: 1px solid rgba(34,36,38,.15);
+    background: #fff;
+
+}
