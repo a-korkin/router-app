@@ -1,10 +1,11 @@
 import React, { FC } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
+import { useTypedSelector } from "../hooks/use-typed-selector";
 import { privateRoutes, publicRoutes, RouteNamesEnum } from "../routes";
 
 const AppRouter: FC = () => {
-    const isAuth = false;
-
+    const { isAuth } = useTypedSelector(state => state.auth);
+    
     return (
         isAuth
         ?

@@ -2,8 +2,16 @@ import React, { FC } from "react";
 import AppRouter from "../app-router";
 import { Link } from "react-router-dom";
 import "./styles.css";
+import { useAction } from "../../hooks/use-action";
 
 const App: FC = () => {
+
+    const { login } = useAction();
+
+    const clickHandler = () => {
+        login();
+    }
+
     return (
         <div>
             <nav className="menu">
@@ -13,6 +21,7 @@ const App: FC = () => {
                 <Link to="/cases">Cases</Link>
             </nav>
             <AppRouter />
+            <button onClick={clickHandler}>login</button>
         </div>
     );
 }
